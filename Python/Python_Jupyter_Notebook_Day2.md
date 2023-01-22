@@ -20,9 +20,9 @@
   - List Comprehension : [expression for i in range(,)]
     - 초기화 할 때도 사용([[0]*5]로 하면 리스트 요소 변경시 다 바뀜)
   - Dictionary comprehension : {key: value for i in range( , )}
+
 - 반복제어 : break, continue, for-else
+  
   - break : 반복문을 종료
   - continue : continue 이후의 코드는 수행하지 않고, 다음 요소부터 반복을 수행
   - pass : 아무것도 하지 않음
-
-
