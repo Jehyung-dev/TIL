@@ -10,4 +10,26 @@
   - zip(a, b) -> (a1, b1), (a2, b2) 등 출력
 - lambda : 계산한 결과를 반환하는 함수(return이 없음)
   - ex : list(map(lambda n : n%2, [1, 2, 3]) -> [1, 0, 1]
-- 재귀 함수(recursive function) : 
+- 재귀 함수(recursive function) : 함수 내부에서 자기 자신을 호출함
+  - ex : 팩토리얼(Factorial) 알고리즘
+  - 재귀 함수 장점 : 코드가 직관적이고 이해하기 쉬움
+  - 재귀 함수 단점 : 함수가 호출될 때마다, 메모리 공간에 쌓여 메모리 스택 오버프로우가 발생하거나 프로그램 속도가 느려짐
+    - 파이썬 최대 재귀 깊이 : 함수가 1,000번 넘어가면 함수 호출이 되지 않고 종료됨
+- 패킹(Packing) : 시퀀스형만 *로 가능
+  - 대입문을 변수 왼쪽에 * 기호를 붙임(묶여서 들어감)
+  - ex : x, *y = 1, 2, 3,4 -> x = 1 / y = [2, 3, 4]
+- 언패킹(Unpacking) : 시퀀스형만 *로 가능
+  - ex : num = 1,2, 3 -> a, b, c = number(언패킹할 때 변수의 갯수가 같아야함)
+- 가변(임의) 인자 리스트(Arbitrary Argument Lists) : *args
+  - 임의 갯수의 위치인자를 받음을 의미
+- 가변(임의) 키워드 인자(Arbitrary Keyword Arguments)
+  - **kwargs : dict형태로 키워드 인자를 받음
+  - dict.items()나 map의 출력형태를 유의해야함
+- 모듈(Module) : 특정 기능을 하는 코드르 담고 있는 파일(함수 적고 import로 사용)
+- 패키지(Package) : 여러 모듈을 모아 놓음
+  - from 패키지 import 모듈
+  - from 패키지.모듈 import 데이터 : 특정 함수만 사용
+  - from 모듈 import * : 모듈 내 모든 변수, 함수, 클래스를 가져옴
+  - from 모듈 import 데이터 as 별명 : as로 새로운 이름 사용가능
+
+   
