@@ -31,5 +31,3 @@
   - from 패키지.모듈 import 데이터 : 특정 함수만 사용
   - from 모듈 import * : 모듈 내 모든 변수, 함수, 클래스를 가져옴
   - from 모듈 import 데이터 as 별명 : as로 새로운 이름 사용가능
-
-   
